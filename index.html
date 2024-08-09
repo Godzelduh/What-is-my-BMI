@@ -2,18 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href=".style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>What is my BMI?</title>
 </head>
-<body>
-    <h1 style="text-align:center;"></h1> What is my BMI?</h1>
+<body style="background-color: aqua;">
+    <h1 style="text-align:center;"> What is my BMI? <br> This is the quickest way for you to now find out yours!</h1>
+    <img src="Assets/images/BMILOGO.png" alt="Image of This is my BMI">
     <header>
+<button class="button">This is a button for the page</button>        
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="bmi.html">BMI</a></li>
-                <li><a href="about.html">About</a></li>
+                <li><a href="index.html">What is BMI?</a></li>
+                <li><a href="bmi.html">Relevance of BMI today</a></li>
+                <li><a href="about.html">Recommendations</a></li>
             </ul>
         </nav>
     </header>
@@ -30,8 +32,47 @@
         <input type="text" placeholder="Weight in lbs." name="weight" id="weight">  
         </form>      
     </main>
-    <h2 style="text-align: left;">What is my current weight and height?</h2>
+    <h2 style="text-align: left;"><i>What is my current weight and height?</i></h2>
+    <hr>
+    <ul>
+    <p><b>BMI stands for body mass index, and this has been a useful tool since as far as back as the 1940s!</b></p>
+    <p><b>Your BMI is determined by using your height and weight, and the results will tell if you are under, over or at the ideal weight!</b></p>
+    <P><b>The higher your BMI is, the more at risk you could be for underlying weight related issues, so keep close attention!</b></P>
+    </ul>
+    <hr>
+    <table class="table is-bordered">
+        <tr>
+          <th>Your Name</th>
+          <th>Height</th> 
+          <th>Weight</th>
+          <th>Results</th>
+          <th>Actual BMI</th>
+        </tr>
+        <tr>
+          <td>Sean</td>
+          <td>6'0</td>
+          <td>290</td>
+          <td>Overweight</td>
+          <td>39</td>
+        </tr>
+        <tr>
+          <td>Eve</td>
+          <td>5'10</td>
+          <td>160</td>
+          <td>Normal Weight</td>
+          <td>23</td>
+        </tr>
+        <tr>
+          <td>John</td>
+          <td>5'8</td>
+          <td>100</td>
+          <td>Underweight</td>
+          <td>15</td>
+        </tr>
+        </table>
+      </table>
 </body>
+
 <script src="script.js"></script>
 <footer>
 
