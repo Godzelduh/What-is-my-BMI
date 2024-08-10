@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="has-background-primary-60">
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
@@ -7,17 +7,39 @@
     <title>What is my BMI?</title>
 </head>
 <body style="background-color: aqua;">
-    <h1 style="text-align:center;"> What is my BMI? <br> This is the quickest way for you to now find out yours!</h1>
-    <img src="Assets/images/BMILOGO.png" alt="Image of This is my BMI">
     <header>
-<button class="button">This is a button for the page</button>        
-        <nav>
-            <ul>
-                <li><a href="index.html">What is BMI?</a></li>
-                <li><a href="bmi.html">Relevance of BMI today</a></li>
-                <li><a href="about.html">Recommendations</a></li>
-            </ul>
-        </nav>
+        <!--Possibly add navbar scroll-->
+        <nav class="navbar has-background-primary" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="index.html">
+                    <img src="Assets/images/BMILOGO.png" alt="Image of This is my BMI" style="max-height: 100px;">
+                    <img src="Assets/images/BMILOGOnobacknopic.png" alt="Image of This is my BMI" style="max-height: 95px">
+                </a>
+                <a role="button" class="navbar-burger" id ="burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>    
+            </div>
+            <div class="navbar-start">
+            </div>
+            <div class="navbar-end">
+                <div class="navbar-item ml-6">
+                    <div class="navbar-menu " id="navLinks" style="text-align:center">
+                        <a href="index.html" class="navbar-item is-size-4" style="max-height: 40px">
+                            Home
+                        </a>
+                        <a href="secondpage.HTML" class="navbar-item is-size-4" style="max-height: 40px">
+                            Results
+                        </a>
+                        <a href="thirdpage.HTML" class="navbar-item is-size-4" style="max-height: 40px">
+                            Relevance of BMI Today
+                        </a>
+                    </div>
+                </div>
+            </div>
+         </nav>       
     </header>
     <main>
         <form id="form">
@@ -31,7 +53,7 @@
         <label for="weight">weight</label>
         <input type="text" placeholder="Weight in lbs." name="weight" id="weight">  
         </form>      
-    </main>
+    
     <h2 style="text-align: left;"><i>What is my current weight and height?</i></h2>
     <hr>
     <ul>
@@ -40,6 +62,7 @@
     <P><b>The higher your BMI is, the more at risk you could be for underlying weight related issues, so keep close attention!</b></P>
     </ul>
     <hr>
+<h2 class="is-size-3">Example table to gauge where you are:</h2>
     <table class="table is-bordered">
         <tr>
           <th>Your Name</th>
@@ -71,10 +94,60 @@
         </tr>
         </table>
       </table>
-</body>
-
+<!-- Modal -->
+<div id="modal-BMI" class="modal">
+    <div class="modal-background"></div>
+        <div class="modal-content">
+            <div class="box container is-align-content-center has-background-primary has-text-white" >
+                <h2 class="is-align-content-center">
+                    Please enter the following data:
+                </h2>
+                <form class ="box field  has-addons has-addons-centered has-text-danger-dark" id = "form">
+                    <label for="height" class="label">Height</label>
+                    <div class="control is-large">
+                    <select class="is-large" id="heightfeet">                
+                        <option value="" disabled selected>Feet</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                    </select>
+                    <select id="heightinches">
+                        <option value="" disabled selected>Inches</option>                
+                        <option>0</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                    </select>
+                    </div>
+                    <label for="weight">Weight</label>
+                    <div class="control">
+                    <input type="text" placeholder="Weight in lbs." name="weight" id="weight">
+                    </div>
+                    <div class="control">
+                        <button id="submit">Submit</button>
+                    </div>
+                </form>
+                <error id="error"></error>
+            </div>
+        </div>
+        <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+</div>
+<script src="Assets/script.js"></script>
+<script src="Assets/test.js"></script>
 <script src="script.js"></script>
 <footer>
-
+</body>
+</main>
 </footer>
 </html>
