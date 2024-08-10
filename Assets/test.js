@@ -1,3 +1,4 @@
+//Modal script
 document.addEventListener('DOMContentLoaded', () => {
     // Functions to open and close a modal
     function openModal($el) {
@@ -40,3 +41,11 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
+
+  //Navbar script
+ const burgerIcon = document.querySelector('#burger')
+ const navbarMenu = document.querySelector('#navLinks')
+
+ burgerIcon.addEventListener('click' , () => {
+    navbarMenu.classList.toggle('is-active')
+ })
