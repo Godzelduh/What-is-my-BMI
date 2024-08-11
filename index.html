@@ -49,10 +49,13 @@
     
     <section class=" box section is-size-4 has-background-primary-90">
     <ul>
-    <p><b>BMI stands for body mass index, and this has been a useful tool since as far as back as the 1940s!</b></p>
-    <p><b>Your BMI is determined by using your height and weight, and the results will tell if you are under, over or at the ideal weight!</b></p>
-    <P><b>The higher your BMI is, the more at risk you could be for underlying weight related issues, so keep close attention!</b></P>
+    <p class="is-italic"><b>Want a convenient way to quickly see what your current BMI is?</b></p>
+    <hr>
+    <p class="is-italic"><b>Your BMI is what helps you monitor your overall current health state, so why wait any longer to find out yours?!</b></p>
+    <hr>
+    <P class="is-italic"><b>This app will not only tell you what your current BMI is, but it will log and keep track of all the changes in 24-hour-intervals!</b></P>
     </ul>
+    <hr>
     <div class="buttons is-centered">
         <button class="button is-rounded is-success  js-modal-trigger is-size-3 has-text-danger-dark"  data-target="modal-BMI">
             Log your BMI
@@ -68,32 +71,32 @@
         <div class="column container is-two-thirds">
     <h2 class="is-size-3 has-text-centered">Example table to gauge where you are:</h2>
     <table class="table is-bordered is-centered">
-        <tr>
+        <tr class="has-background-grey-light">
           <th class ="has-background-primary">Your Name</th>
           <th>Height</th> 
           <th>Weight</th>
           <th>Results</th>
           <th>Actual BMI</th>
         </tr>
-        <tr>
-          <td>Sean</td>
+        <tr class="has-background-danger-85">
+          <td class="has-background-primary-85 is-italic">Sean</td>
           <td>6'0</td>
           <td>290</td>
-          <td>Overweight</td>
+          <td class="has-background-danger-75">Overweight</td>
           <td>39</td>
         </tr>
-        <tr>
-          <td>Eve</td>
+        <tr class="has-background-success-75">
+          <td class="has-background-primary-75 is-italic">Eve</td>
           <td>5'10</td>
           <td>160</td>
-          <td>Normal Weight</td>
+          <td class="has-background-success-45">Normal Weight</td>
           <td>23</td>
         </tr>
-        <tr>
-          <td>John</td>
+        <tr class="has-background-warning-75">
+          <td class="has-background-primary-45 is-italic">John</td>
           <td>5'8</td>
           <td>100</td>
-          <td>Underweight</td>
+          <td class="has-background-warning-65">Underweight</td>
           <td>15</td>
         </tr>
         </table>
@@ -161,6 +164,16 @@
 </main>
 
 <footer>
+        <div class="columns is-centered">
+            <div class="column">
+            </div>
+            <div class="column">
+                <p class="is-italic has-text-centered">This Is a Tool Not Made By Professional Medical Doctors</p>
+            </div>
+            <div class="column">
+            </div>
+        </div>
+    </div>
 </footer>
 <script src="Assets/script.js"></script>
 </body>
