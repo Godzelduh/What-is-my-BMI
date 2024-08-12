@@ -42,6 +42,7 @@ function BMICalc() {
         });
         displaySavedResults();
         window.location.href = 'results.html'
+        closeModal(modalBMI);
     }
 };
 
@@ -80,9 +81,8 @@ function closeModal($el) {
 submit.addEventListener('click', function (event) {
     event.preventDefault();
     BMICalc();
-    closeModal(modalBMI);
+    
     console.log('clicked');
-    console.log(weight.value);
 });
 
 //Modal script

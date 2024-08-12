@@ -7,112 +7,117 @@
     <title>Results</title>
 </head>
 <body style="background-color: aqua;">
-<header>
-    <!--Possibly add navbar scroll-->
-    <nav class="navbar has-background-primary" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand">
-            <a class="navbar-item" href="index.html">
-                <img src="Assets/images/BMILOGO.png" alt="Image of This is my BMI" style="max-height: 100px;">
-                <img src="Assets/images/BMILOGOnobacknopic.png" alt="Image of This is my BMI" style="max-height: 95px">
-            </a>
-            <a role="button" class="navbar-burger" id ="burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+<!--Navbar-->
+    <header>
+        <nav class="navbar has-background-primary" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="index.html">
+                    <img src="Assets/images/BMILOGO.png" alt="Image of This is my BMI" style="max-height: 100px;">
+                    <img src="Assets/images/BMILOGOnobacknopic.png" alt="Image of This is my BMI" style="max-height: 95px">
+                </a>
+                <a role="button" class="navbar-burger" id ="burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
-            </a>  
-        </div>
-        <div class="navbar-start">
-        </div>
-        <div class="navbar-end">
-            <div class="navbar-item ml-6">
-                <div class="navbar-menu " id="navLinks" style="text-align:center">
-                    <a href="index.html" class="navbar-item is-size-4" style="max-height: 40px">
+                </a>  
+            </div>
+            <div class="navbar-start">
+            </div>
+<!--Navbar Links-->        
+            <div class="navbar-end">
+                <div class="navbar-item ml-6">
+                    <div class="navbar-menu " id="navLinks" style="text-align:center">
+                        <a href="index.html" class="navbar-item is-size-4" style="max-height: 40px">
                         Home
-                    </a>
-                    <a href="results.HTML" class="navbar-item is-size-4" style="max-height: 40px">
+                        </a>
+                        <a href="results.HTML" class="navbar-item is-size-4" style="max-height: 40px">
                         Results
-                    </a>
-                    <a href="relevance.HTML" class="navbar-item is-size-4" style="max-height: 40px">
+                        </a>
+                        <a href="relevance.HTML" class="navbar-item is-size-4" style="max-height: 40px">
                         Relevance of BMI Today
-                    </a>
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
-     </nav>
-</header>
-<main class="columns">
-    <section class="column">
-    </section>
-    <section class="column is-half">
-        <div class="buttons is-centered mt-5">
-            <button class="button is-rounded is-success  js-modal-trigger is-size-3 has-text-danger-dark"  data-target="modal-BMI">
+        </nav>
+    </header>
+<!--Main-->
+    <main class="columns">
+        
+        <section class="column is-half">
+<!--Log Button-->        
+            <div class="buttons is-centered mt-5">
+                <button class="button is-rounded is-success  js-modal-trigger is-size-3 has-text-danger-dark"  data-target="modal-BMI">
                 Log your BMI
-            </button>
-        </div>
-        <div class="box section has-background-primary-90" id="savedResultsContainer">
-        </div>
-    </section>
-    <section class="column">
-    </section>
-    <!-- Modal -->
-    <div id="modal-BMI" class="modal">
-        <div class="modal-background"></div>
-            <div class="modal-content">
-                <div class="box container   is-centered has-background-primary" >
-                    <h2 class=" has-text-centered is-size-4">
+                </button>
+            </div>
+<!--Saved Results-->        
+            <div class="box section has-background-primary-90" id="savedResultsContainer">
+            </div>
+        </section>
+        <section class="column">
+            <img src="https://st.depositphotos.com/1063346/1392/i/450/depositphotos_13929525-stock-photo-bathroom-scales.jpg" alt="This is an image of a scale" style="height: fit-content">
+        </section>
+<!-- Modal -->
+        <div id="modal-BMI" class="modal">
+            <div class="modal-background"></div>
+                <div class="modal-content">
+                    <div class="box container   is-centered has-background-primary" >
+                        <h2 class=" has-text-centered is-size-4">
                         Please enter the following data:
-                    </h2>
-                    <form class ="box field has-background-primary-90 has-addons has-addons-centered" id = "form">
-                        <div class="control">
-                            <label for="height" class="label">Height</label>
-                            <div class="select">                    
-                                <select id="heightfeet">                
-                                    <option value="" disabled selected>Feet</option>
-                                    <option>4</option>
-                                    <option>5</option>
-                                    <option>6</option>
-                                    <option>7</option>
-                                </select>
+                        </h2>
+                        <form class ="box field has-background-primary-90 has-addons has-addons-centered" id = "form">
+                            <div class="control">
+    <!--Height Selectors-->
+                                <label for="height" class="label">Height</label>
+                                <div class="select">                    
+                                    <select id="heightfeet">                
+                                        <option value="" disabled selected>Feet</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                        <option>6</option>
+                                        <option>7</option>
+                                    </select>
+                                </div>
+                                <div class="select">
+                                    <select id="heightinches">
+                                        <option value="" disabled selected>Inches</option>                
+                                        <option>0</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                        <option>6</option>
+                                        <option>7</option>
+                                        <option>8</option>
+                                        <option>9</option>
+                                        <option>10</option>
+                                        <option>11</option>
+                                        <option>12</option>
+                                    </select>
+                                </div>
                             </div>
-                            <div class="select">
-                                <select id="heightinches">
-                                    <option value="" disabled selected>Inches</option>                
-                                    <option>0</option>
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
-                                    <option>6</option>
-                                    <option>7</option>
-                                    <option>8</option>
-                                    <option>9</option>
-                                    <option>10</option>
-                                    <option>11</option>
-                                    <option>12</option>
-                                </select>
+                            <div class="control ml-4"> 
+    <!--Weight Input-->   
+                                <label for="weight" class="label">Weight</label>
+                                <input class="input" type="text" placeholder="Weight in lbs." name="weight" id="weight">
                             </div>
+                            <div class="control ml-4">
+    <!--Submit Button-->
+                                <label for="submit" class="label"><br></label>
+                                <button class="button" id="submit">Submit</button>
+                            </div>
+                        </form>
+                        <div class ="is-size-4 has-text-centered has-text-danger-50" id="error"></div>
                         </div>
-                        <div class="control ml-4">    
-                            <label for="weight" class="label">Weight</label>
-                            <input class="input" type="text" placeholder="Weight in lbs." name="weight" id="weight">
-                        </div>
-                        <div class="control ml-4">
-                            <label for="submit" class="label"><br></label>
-                            <button class="button" id="submit">Submit</button>
-                        </div>
-                    
-                    </form>
-                    <error class ="is-size-4 has-text-centered has-text-danger-50" id="error"></error>
+                    </div>
+                    <button class="modal-close is-large" aria-label="close"></button>
                 </div>
             </div>
-            <button class="modal-close is-large" aria-label="close"></button>
         </div>
-    </div>
-    <img src="https://st.depositphotos.com/1063346/1392/i/450/depositphotos_13929525-stock-photo-bathroom-scales.jpg" alt="This is an image of a scale" style="height: fit-content">
-</main>
-    <script src="Assets/script.js"></script>
+    </main>
     <footer>
         <div class="columns is-centered">
             <div class="column">
@@ -123,7 +128,7 @@
             <div class="column">
             </div>
         </div>
-    </div>
     </footer>
+    <script src="Assets/script.js"></script>
 </body>
 </html>
