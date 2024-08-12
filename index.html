@@ -42,80 +42,84 @@
          </nav>       
     </header>
     <main>
-           
-    
-    <hr>
-    <hr>
-    
-    <section class=" box section is-size-4 has-background-primary-90">
-    <ul>
-    <p class="is-italic"><b>Want a convenient way to quickly see what your current BMI is?</b></p>
-    <hr>
-    <p class="is-italic"><b>Your BMI is what helps you monitor your overall current health state, so why wait any longer to find out yours?!</b></p>
-    <hr>
-    <P class="is-italic"><b>This app will not only tell you what your current BMI is, but it will log and keep track of all the changes in 24-hour-intervals!</b></P>
-    </ul>
-    <hr>
-    <div class="buttons is-centered">
-        <button class="button is-rounded is-success  js-modal-trigger is-size-3 has-text-danger-dark"  data-target="modal-BMI">
-            Log your BMI
-        </button>
-    </div> 
-    </section>
-    <hr>
-    <hr>
-    <div class="box has-background-primary-90">
-    <section class="columns is-centered">
-        <div class="column">
+        <hr>
+        <hr>
+        <section class=" box section is-size-4 has-background-primary-90">
+            <ul>
+                <p class="is-italic"><b>Want a convenient way to quickly see what your current BMI is?</b></p>
+            <hr>
+            <p class="is-italic"><b>Your BMI is what helps you monitor your overall current health state, so why wait any longer to find out yours?!</b></p>
+            <hr>
+            <p class="is-italic"><b>This app will not only tell you what your current BMI is, but it will log and keep track of all the changes in 24-hour-intervals!</b></P>
+            </ul>
+            <hr>
+            <div class="buttons is-centered">
+                <button class="button is-rounded is-success  js-modal-trigger is-size-3 has-text-danger-dark"  data-target="modal-BMI">
+                Log your BMI
+                </button>
+            </div> 
+        </section>
+        <hr>
+        <hr>
+        <div class="box has-background-primary-90">
+            <section class="columns is-centered">
+                <div class="column">
+                </div>
+                <div class="column container is-two-thirds is centered">
+                    
+                    <div class="columns">
+                        
+                        <div class="column">
+                            <p class="is-italic has-text-centered">This table is an example of what you can expect to see when you log your BMI.</p>
+                        </div>
+                       
+                    <table class="table is-bordered is-centered is-size-4">
+                        <tr class="has-background-grey-light">
+                            <th class ="has-background-primary">Your Name</th>
+                            <th>Height</th> 
+                            <th>Weight</th>
+                            <th>Results</th>
+                            <th>Actual BMI</th>
+                        </tr>
+                        <tr class="has-background-danger-85">
+                            <td class="has-background-primary-85 is-italic">Sean</td>
+                            <td>6'0</td>
+                            <td>290</td>
+                            <td class="has-background-danger-75">Overweight</td>
+                            <td>39</td>
+                        </tr>
+                        <tr class="has-background-success-75">
+                            <td class="has-background-primary-75 is-italic">Eve</td>
+                            <td>5'10</td>
+                            <td>160</td>
+                            <td class="has-background-success-45">Normal Weight</td>
+                            <td>23</td>
+                        </tr>
+                        <tr class="has-background-warning-75">
+                            <td class="has-background-primary-45 is-italic">John</td>
+                            <td>5'8</td>
+                            <td>100</td>
+                            <td class="has-background-warning-65">Underweight</td>
+                            <td>15</td>
+                        </tr>
+                    </table>
+                </div>
+                </div>
+                <div class="column">
+                </div>
+            </section>
         </div>
-        <div class="column container is-two-thirds">
-    <h2 class="is-size-3 has-text-centered">Example table to gauge where you are:</h2>
-    <table class="table is-bordered is-centered">
-        <tr class="has-background-grey-light">
-          <th class ="has-background-primary">Your Name</th>
-          <th>Height</th> 
-          <th>Weight</th>
-          <th>Results</th>
-          <th>Actual BMI</th>
-        </tr>
-        <tr class="has-background-danger-85">
-          <td class="has-background-primary-85 is-italic">Sean</td>
-          <td>6'0</td>
-          <td>290</td>
-          <td class="has-background-danger-75">Overweight</td>
-          <td>39</td>
-        </tr>
-        <tr class="has-background-success-75">
-          <td class="has-background-primary-75 is-italic">Eve</td>
-          <td>5'10</td>
-          <td>160</td>
-          <td class="has-background-success-45">Normal Weight</td>
-          <td>23</td>
-        </tr>
-        <tr class="has-background-warning-75">
-          <td class="has-background-primary-45 is-italic">John</td>
-          <td>5'8</td>
-          <td>100</td>
-          <td class="has-background-warning-65">Underweight</td>
-          <td>15</td>
-        </tr>
-        </table>
-      </table>
-        </div>
-        <div class="column">
-        </div>
-    </section>
-    </div>
 <!-- Modal -->
 <div id="modal-BMI" class="modal">
     <div class="modal-background"></div>
         <div class="modal-content">
-            <div class="box container  has-background-primary" >
+            <div class="box container   is-centered has-background-primary" >
                 <h2 class=" has-text-centered is-size-4">
-                    Please enter the following data:
+                Please enter the following data:
                 </h2>
                 <form class ="box field has-background-primary-90 has-addons has-addons-centered" id = "form">
                     <div class="control">
+<!--Height Selectors-->
                         <label for="height" class="label">Height</label>
                         <div class="select">                    
                             <select id="heightfeet">                
@@ -145,36 +149,25 @@
                             </select>
                         </div>
                     </div>
-                    <div class="control ml-4">    
+                    <div class="control ml-4"> 
+<!--Weight Input-->   
                         <label for="weight" class="label">Weight</label>
                         <input class="input" type="text" placeholder="Weight in lbs." name="weight" id="weight">
                     </div>
                     <div class="control ml-4">
+<!--Submit Button-->
                         <label for="submit" class="label"><br></label>
                         <button class="button" id="submit">Submit</button>
                     </div>
-                
                 </form>
-                <error id="error"></error>
+                <div class ="is-size-4 has-text-centered has-text-danger-50" id="error"></div>
+                </div>
             </div>
+            <button class="modal-close is-large" aria-label="close"></button>
         </div>
-        <button class="modal-close is-large" aria-label="close"></button>
     </div>
 </div>
-</main>
-
-<footer>
-        <div class="columns is-centered">
-            <div class="column">
-            </div>
-            <div class="column">
-                <p class="is-italic has-text-centered">This Is a Tool Not Made By Professional Medical Doctors</p>
-            </div>
-            <div class="column">
-            </div>
-        </div>
-    </div>
-</footer>
+    </footer>
 <script src="Assets/script.js"></script>
 </body>
 
