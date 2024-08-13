@@ -7,6 +7,31 @@ For a more accurate result, the user can navigate to the daily logs, as this wil
 The application also explains why the BMI is relevant today, and how it can be useful for any individual trying to achieve their goals.
 We want users to feel comfortable at all times knowing where they stand on the BMI, and this is why they should feel at ease when using it.
 
+## User Story
+
+AS A weight watcher, 
+I WANT to know what my BMI is
+SO THAT I know if I am healthy or not.
+I ALSO WANT to log my results once a day 
+SO THAT I can keep track of where I stand.
+ADDITIONALLY I NEED to read on why BMI is relevant today still.
+
+## Acceptance Criteria 
+
+PROVIDED a convenient application, 
+WHEN I load the app, 
+THEN I have the main page loaded to input my height and weight
+WHEN I submit my data,
+THEN I receive the results of my BMI.
+WHEN I navigate to the 'Results' page,
+THEN I see the daily logs of all my entries.
+WHEN I try to enter a new log twice on the same day, 
+THEN the page does not log it in multiple times.
+WHEN I want to learn fun facts, and the relevance of of BMI today, 
+THEN I tap on to the 'Relevance' tab to read about everything I want to know. 
+WHEN I want to go back to the 'home' or 'results' page,
+THEN I tap on any tab on the navigational bar.
+
 ## Installation 
 
 The steps to download the application are as simple as downloading it from the user's app or play store.
@@ -18,10 +43,14 @@ This is a quick and easy to use application by simply picking the feet and inche
 For the weight portion, we ask the users to just type in what their weight is, and immediately after this, they will see the results of their BMI.
 They can also refer to the 'Results' page to see a daily log of any changes they've had on their BMI, which is recommending for any user trying to make this part of a new lifestyle.
 
+<img src="Assets/images/BMIAppIMAGE.png" alt="Image of Application" style="max-height: 50px;">
+
 ## Credits 
-Bryan Spencer 
+Bryan Spencer - https://github.com/Bryspen 
+<br>
 Patrick Bowman - https://github.com/Godzelduh
-Caleb Parker
+<br>
+Caleb Parker - https://github.com/CJdacoda
 
 ## License 
 
