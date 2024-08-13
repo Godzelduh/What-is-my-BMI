@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Results</title>
 </head>
-<body style="background-color: aqua;">
+<body>
 <!--Navbar-->
     <header>
         <nav class="navbar has-background-primary" role="navigation" aria-label="main navigation">
             <div class="navbar-brand">
                 <a class="navbar-item" href="index.html">
                     <img src="Assets/images/BMILOGO.png" alt="Image of This is my BMI" style="max-height: 100px;">
-                    <img src="Assets/images/BMILOGOnobacknopic.png" alt="Image of This is my BMI" style="max-height: 95px">
+                    <img src="Assets/images/BMILOGOnobacknopic.png" alt="Image of This is my BMI" style="max-height: 85px">
                 </a>
                 <a role="button" class="navbar-burger" id ="burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
                 <span aria-hidden="true"></span>
@@ -31,10 +31,10 @@
                         <a href="index.html" class="navbar-item is-size-4" style="max-height: 40px">
                         Home
                         </a>
-                        <a href="results.HTML" class="navbar-item is-size-4" style="max-height: 40px">
+                        <a href="results.html" class="navbar-item is-size-4" style="max-height: 40px">
                         Results
                         </a>
-                        <a href="relevance.HTML" class="navbar-item is-size-4" style="max-height: 40px">
+                        <a href="relevance.html" class="navbar-item is-size-4" style="max-height: 40px">
                         Relevance of BMI Today
                         </a>
                     </div>
@@ -43,22 +43,27 @@
         </nav>
     </header>
 <!--Main-->
-    <main class="columns">
-        
-        <section class="column is-half">
-<!--Log Button-->        
-            <div class="buttons is-centered mt-5">
-                <button class="button is-rounded is-success  js-modal-trigger is-size-3 has-text-danger-dark"  data-target="modal-BMI">
-                Log your BMI
-                </button>
-            </div>
-<!--Saved Results-->        
-            <div class="box section has-background-primary-90" id="savedResultsContainer">
-            </div>
-        </section>
-        <section class="column">
-            <img src="https://st.depositphotos.com/1063346/1392/i/450/depositphotos_13929525-stock-photo-bathroom-scales.jpg" alt="This is an image of a scale" style="height: fit-content">
-        </section>
+    <main> 
+        <hr>
+        <hr>
+        <div class=" section columns">
+            <section class="column is-half">
+    <!--Log Button-->        
+                <div class="buttons is-centered">
+                    <button class="button is-rounded is-success  js-modal-trigger is-size-3 has-text-danger-dark"  data-target="modal-BMI">
+                    Log your BMI
+                    </button>
+                </div>
+    <!--Saved Results-->        
+                <div class="box section has-background-primary-90" id="savedResultsContainer">
+                </div>
+            </section>
+            <section class="column">
+                <figure class="image is-1by1">
+                    <img class="is-rounded" src="https://st.depositphotos.com/1063346/1392/i/450/depositphotos_13929525-stock-photo-bathroom-scales.jpg" alt="This is an image of a scale" class="">
+                </figure>
+            </section>
+        </div>
 <!-- Modal -->
         <div id="modal-BMI" class="modal">
             <div class="modal-background"></div>
@@ -69,7 +74,7 @@
                         </h2>
                         <form class ="box field has-background-primary-90 has-addons has-addons-centered" id = "form">
                             <div class="control">
-    <!--Height Selectors-->
+<!--Height Selectors-->
                                 <label for="height" class="label">Height</label>
                                 <div class="select">                    
                                     <select id="heightfeet">                
@@ -100,12 +105,12 @@
                                 </div>
                             </div>
                             <div class="control ml-4"> 
-    <!--Weight Input-->   
+<!--Weight Input-->   
                                 <label for="weight" class="label">Weight</label>
                                 <input class="input" type="text" placeholder="Weight in lbs." name="weight" id="weight">
                             </div>
                             <div class="control ml-4">
-    <!--Submit Button-->
+<!--Submit Button-->
                                 <label for="submit" class="label"><br></label>
                                 <button class="button" id="submit">Submit</button>
                             </div>
@@ -118,6 +123,7 @@
             </div>
         </div>
     </main>
+<!--Footer-->
     <footer>
         <div class="columns is-centered">
             <div class="column">

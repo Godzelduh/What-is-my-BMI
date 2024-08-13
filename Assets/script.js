@@ -11,11 +11,12 @@ const modalBMI = document.querySelector('#modal-BMI')
 const savedResultsContainer = document.querySelector('#savedResultsContainer');
 let BMIs = JSON.parse(localStorage.getItem('BMIData')) || [];
 
+//Function to Save Entries
 function saveEntry(BMIData) {
     BMIs.unshift(BMIData);
     localStorage.setItem('BMIData', JSON.stringify(BMIs));
 }
-
+//Function to Calculate BMI
 function BMICalc() {
     const timestamp = new Date();
     const newDate = `${timestamp.getMonth() + 1}-${timestamp.getDate()}-${timestamp.getFullYear()}`; 
@@ -25,14 +26,11 @@ function BMICalc() {
     const BMI = ((((weightValue / (((heightfeetValue * 12) + heightinchesValue) * ((heightfeetValue * 12) + heightinchesValue)))) * 703)).toFixed(2);
     if (isNaN(heightfeetValue) || isNaN(heightinchesValue) || isNaN(weightValue) || heightfeet.value === '' || heightinches.value === '' || weight.value === '' || BMI <= 0 || BMI >= 100) {
         error.textContent = 'Please enter a valid height and weight';
-        //result.textContent = '';  What is happening
         console.log(`invalid entry`, BMI);
         return console.log('Please enter a valid height and weight');
     } else {
      
         error.textContent = '';
-        console.log(BMI);
-        console.log(BMIs);
         saveEntry({
             timestamp: newDate,
             heightfeet: heightfeet.value,
@@ -45,7 +43,7 @@ function BMICalc() {
         closeModal(modalBMI);
     }
 };
-
+//Display Saved Results
 function displaySavedResults() {
     
     savedResultsContainer.innerHTML = ''; 
@@ -75,13 +73,10 @@ function displaySavedResults() {
     });
 }
 
-function closeModal($el) {
-    $el.classList.remove('is-active');
-  }
+//Submit button event listener
 submit.addEventListener('click', function (event) {
     event.preventDefault();
     BMICalc();
-    
     console.log('clicked');
 });
 
@@ -129,7 +124,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  //Navbar script
+  //Navbar Script
  const burgerIcon = document.querySelector('#burger')
  const navbarMenu = document.querySelector('#navLinks')
 
@@ -138,13 +133,7 @@ document.addEventListener('DOMContentLoaded', () => {
  })
 
 
-function init() {
-    console.log('App started');
-    console.log(new Date())
-    console.log(window.location.pathname)
-    ;
-}
-init();
+//Event Listener to Display Saved Results on Page Load
 document.addEventListener('DOMContentLoaded', () => {
     const currentPage = window.location.pathname;
     const resultsPage = '/results.html';
