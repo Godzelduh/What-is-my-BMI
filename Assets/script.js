@@ -23,8 +23,8 @@ function BMICalc() {
     const heightfeetValue = parseFloat(heightfeet.value);
     const heightinchesValue = parseFloat(heightinches.value);
     const weightValue = parseFloat(weight.value);
-    const BMI = ((((weightValue / (((heightfeetValue * 12) + heightinchesValue) * ((heightfeetValue * 12) + heightinchesValue)))) * 703)).toFixed(2);
-    if (isNaN(heightfeetValue) || isNaN(heightinchesValue) || isNaN(weightValue) || heightfeet.value === '' || heightinches.value === '' || weight.value === '' || BMI <= 0 || BMI >= 100) {
+    const BMI = ((((weightValue / (((heightfeetValue * 12) + heightinchesValue) * ((heightfeetValue * 12) + heightinchesValue)))) * 703)).toFixed(1);
+    if (isNaN(heightfeetValue) || isNaN(heightinchesValue) || isNaN(weightValue) || heightfeet.value === '' || heightinches.value === '' || weight.value === '' || BMI <= 0 || BMI >= 85) {
         error.textContent = 'Please enter a valid height and weight';
         console.log(`invalid entry`, BMI);
         return console.log('Please enter a valid height and weight');
@@ -67,8 +67,7 @@ function displaySavedResults() {
             <p class='is-size-2 has-text-primary-20 has-text-weight-bold'>${entry.timestamp}</p>
             <p>Height: ${entry.heightfeet} feet ${entry.heightinches} inches</p>
             <p>Weight: ${entry.weight} lbs</p>
-            <p>BMI: ${entry.BMI}</p>
-        `;
+            <p><b>BMI: ${entry.BMI}</b></p>`;
         savedResultsContainer.appendChild(entryElement);
     });
 }
@@ -130,7 +129,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
  burgerIcon.addEventListener('click' , () => {
     navbarMenu.classList.toggle('is-active')
+    console.log('clicked')
  })
+
 
 
 //Event Listener to Display Saved Results on Page Load
