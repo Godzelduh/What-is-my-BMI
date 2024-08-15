@@ -72,7 +72,7 @@ function displaySavedResults() {
     });
 }
 
-//Submit button event listener
+//Submit Button event listener
 submit.addEventListener('click', function (event) {
     event.preventDefault();
     BMICalc();
