@@ -1,5 +1,7 @@
 # What-is-my-BMI
 
+https://godzelduh.github.io/What-is-my-BMI/whatisbmi.html
+
 ## Description 
 A tool to help measure your body mass index. 
 This is achieved by the user submitting their height and weight into the prompt, which then gives them a rounded BMI.
@@ -53,8 +55,7 @@ THEN I tap on any tab on the navigational bar.
 
 ## Installation 
 
-The steps to download the application are as simple as downloading it from the user's app or play store.
-Additionally, the user can use the web browser version which would only require them to enter the URL into the search bar.
+The installation process is quick and easy since everything is already set up for the user. The user will only need to input the URL into the search bar, that will then take them right onto the home page of 'What is My BMI?'. Once they've gotten into the website, they may navigate anywhere they would like by clicking the navigational buttons on the top of the page, as well as logging their BMI in the modal. 
 
 ## Usage
 
@@ -62,7 +63,7 @@ This is a quick and easy to use application by simply picking the feet and inche
 For the weight portion, we ask the users to just type in what their weight is, and immediately after this, they will see the results of their BMI.
 They can also refer to the 'Results' page to see a daily log of any changes they've had on their BMI, which is recommending for any user trying to make this part of a new lifestyle.
 
-<img src="Assets/images/BMIFrontPAGE.png" alt="Image of Application" style="max-height: 50px;">
+<img src="Assets/images/BMIHomePAGE.png" alt="Image of Application" style="max-height: 50px;">
 
 ## Credits 
 Bryan Spencer - https://github.com/Bryspen 
@@ -73,9 +74,7 @@ Caleb Parker - https://github.com/CJdacoda
 
 ## Resources 
 
-BMI Calculator Formula - https://www.calculator.net/calorie-calculator.html?cage=25&csex=m&cheightfeet=5&cheightinch=10&cpound=165&cheightmeter=180&ckg=65&cactivity=1.465&cmop=0&coutunit=c&cformula=m&cfatpct=20&printit=0&ctype=standard
-
-Calorie Tracker - https://www.calculator.net/calorie-calculator.html?cage=25&csex=m&cheightfeet=5&cheightinch=10&cpound=165&cheightmeter=180&ckg=65&cactivity=1.465&cmop=0&coutunit=c&cformula=m&cfatpct=20&printit=0&ctype=standard
+BMI Calculator Formula - https://www.cdc.gov/nccdphp/dnpao/growthcharts/training/bmiage/page5_1.html#:~:text=With%20the%20metric%20system%2C%20the,multiply%20the%20result%20by%2010%2C000.
 
 ## License 
 
