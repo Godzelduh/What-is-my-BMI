@@ -11,7 +11,7 @@ const modalBMI = document.querySelector('#modal-BMI')
 const savedResultsContainer = document.querySelector('#savedResultsContainer');
 let BMIs = JSON.parse(localStorage.getItem('BMIData')) || [];
 
-//Function to Save Entries
+//Function for Save Entries
 function saveEntry(BMIData) {
     BMIs.unshift(BMIData);
     localStorage.setItem('BMIData', JSON.stringify(BMIs));
@@ -79,7 +79,7 @@ submit.addEventListener('click', function (event) {
     console.log('clicked');
 });
 
-//Modal script
+//Modal scripts
 document.addEventListener('DOMContentLoaded', () => {
     // Functions to open and close a modal
     function openModal($el) {
