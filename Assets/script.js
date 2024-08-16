@@ -79,7 +79,7 @@ submit.addEventListener('click', function (event) {
     console.log('clicked');
 });
 
-//Modal script
+//Modal scripts
 document.addEventListener('DOMContentLoaded', () => {
     // Functions to open and close a modal
     function openModal($el) {
